@@ -1,0 +1,94 @@
+*::before, *::after {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+#calculator-border {
+    position: absolute;
+    background-color: grey;
+    width: 40rem;
+    height: 55rem;
+    min-height: 30rem;
+    border-radius: 10px;
+}
+
+#calculator-display {
+    position: relative;
+    height: 11rem;
+    width: 35rem;
+    background-color: white;
+    top: 3%;
+    left: 6%;
+    border-radius: 8px;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 30px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.operations-working, .operations-result {
+    padding-right: 10px;
+}
+
+.operations-result {
+    font-size: 2rem;
+}
+
+#clear-delete-button {
+    width: 35rem;
+    margin: 0 0 0 25px;
+    border: 0;
+    padding: 0;
+}
+
+
+#clear-button, #delete-button {
+    width: 17rem;
+    height: 7rem;
+    font-size: 1.5rem;
+    background-color: rgb(93, 163, 255);
+    border: 3px solid black;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#clear-button {
+    margin-right: 0.5rem;
+    background-color: rgb(240, 99, 94);
+}
+
+#clear-button:hover, #delete-button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(4, 70px);
+    margin-top: 15px;
+    margin-left: 27px;
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+}
+
+button {
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
